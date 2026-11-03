@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "fortressmod",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Fortress Mod",
+	"description": "Adds fortress-themed content to Better than Adventure.",
 	"authors": [
-		"Turnip Labs"
+		"lancelikessause"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,11 +16,14 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"lancelikessause.fortressmod.Fortressmod"
+		],
+		"client": [
+			"lancelikessause.fortressmod.FortressmodClient"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+      "fortressmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
