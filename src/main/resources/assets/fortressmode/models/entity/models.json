@@ -1,0 +1,27 @@
+{
+  "model_paths": [
+    "/assets/fortressmode/models/entity/lich/lich.geo.json",
+    "/assets/fortressmode/models/entity/meaty/meaty.geo.json",
+    "/assets/fortressmode/models/entity/troll/troll.geo.json",
+    "/assets/fortressmode/models/entity/automoton/automoton.geo.json",
+    "/assets/fortressmode/models/entity/ghost/ghost.geo.json",
+    "/assets/minecraft/models/entity/zombie/zombie.geo.json"
+  ],
+  "renderers": {
+    "fortressmode:automoton": {
+      "main": "geometry.zombie"
+    },
+    "fortressmode:troll": {
+      "main": "geometry.troll"
+    },
+    "fortressmode:ghost": {
+      "main": "geometry.ghost"
+    },
+    "fortressmode:meaty": {
+      "main": "geometry.meaty"
+    },
+    "fortressmode:lich": {
+      "main": "geometry.lich"
+    }
+  }
+}

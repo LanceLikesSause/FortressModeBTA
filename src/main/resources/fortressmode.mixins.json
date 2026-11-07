@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "lancelikessause.fortressmode.mixin",
+  "compatibilityLevel": "JAVA_${java}",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "CreeperMixin",
+    "MobMixin",
+    "MonsterMixin",
+    "SkeletonMixin",
+    "SlimeMixin",
+    "SpiderMixin",
+    "ZombieArmoredMixin",
+    "ZombieMixin"
+  ],
+  "client": []
+}
