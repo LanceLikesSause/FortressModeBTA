@@ -19,7 +19,7 @@
 			"lancelikessause.fortressmode.FortressmodeMain"
 		],
 		"client": [
-			"lancelikessause.fortressmode.FortressmodeClient"
+			"lancelikessause.fortressmode.ModClient"
 		]
 	},
 	"mixins": [

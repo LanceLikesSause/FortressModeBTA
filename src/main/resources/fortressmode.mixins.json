@@ -6,14 +6,18 @@
     "defaultRequire": 1
   },
   "mixins": [
+    "BiomeMixin",
     "CreeperMixin",
     "MobMixin",
     "MonsterMixin",
+    "PathfindingMixin",
     "SkeletonMixin",
     "SlimeMixin",
     "SpiderMixin",
+    "WolfMixin",
     "ZombieArmoredMixin",
-    "ZombieMixin"
+    "ZombieMixin",
+    "ZombiePigmanMixin"
   ],
   "client": []
 }

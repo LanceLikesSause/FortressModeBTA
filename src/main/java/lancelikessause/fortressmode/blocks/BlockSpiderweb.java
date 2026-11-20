@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 
-public class SpiderCobwebBlock extends BlockLogicCobweb {
-	public SpiderCobwebBlock(Block<?> block, Material material) {
+public class BlockSpiderweb extends BlockLogicCobweb {
+	public BlockSpiderweb(Block<?> block, Material material) {
 		super(block, material);
 	}
 

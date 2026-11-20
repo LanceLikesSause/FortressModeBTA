@@ -1,8 +1,8 @@
 {
 	"format_version": "1.10.0",
 	"geometry.troll": {
-		"texturewidth": 80,
-		"textureheight": 71,
+		"texturewidth": 88,
+		"textureheight": 68,
 		"visible_bounds_width": 3,
 		"visible_bounds_height": 4.5,
 		"visible_bounds_offset": [0, 1.75, 0],
@@ -14,9 +14,9 @@
 			{
 				"name": "head",
 				"parent": "root",
-				"pivot": [0, 24, 0],
+				"pivot": [0, 39, -3],
 				"cubes": [
-					{"origin": [-6, 31, -9], "size": [12, 12, 12], "uv": [0, 39]}
+					{"origin": [-6, 38, -9], "size": [12, 12, 12], "uv": [0, 41]}
 				]
 			},
 			{
@@ -24,39 +24,50 @@
 				"parent": "root",
 				"pivot": [0, 24, 0],
 				"cubes": [
-					{"origin": [-8, 12, -4], "size": [16, 25, 14], "uv": [0, 0]}
+					{"origin": [-9, 14, -4], "size": [18, 27, 12], "uv": [0, 2]}
 				]
 			},
 			{
 				"name": "rightArm",
 				"parent": "root",
-				"pivot": [-11, 32, 0],
+				"pivot": [-11, 33, 3],
 				"cubes": [
-					{"origin": [-14, 9, 0], "size": [6, 26, 6], "uv": [48, 39]}
+					{"origin": [-15, 9, -2], "size": [6, 29, 8], "uv": [60, 28]}
 				]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-12, 9, -2],
+				"rotation": [90, 0, 0]
 			},
 			{
 				"name": "leftArm",
 				"parent": "root",
-				"pivot": [11, 32, 0],
+				"pivot": [11, 33, 4],
 				"cubes": [
-					{"origin": [8, 9, 1], "size": [6, 26, 6], "uv": [48, 39]}
+					{"origin": [9, 9, -2], "size": [6, 29, 8], "uv": [60, 28]}
 				]
+			},
+			{
+				"name": "leftItem",
+				"parent": "leftArm",
+				"pivot": [12, 9, -2]
 			},
 			{
 				"name": "rightLeg",
 				"parent": "root",
-				"pivot": [-1.9, 12, 0],
+				"pivot": [-3.9, 12, 2],
 				"cubes": [
-					{"origin": [-5.9, 0, -1], "size": [5, 12, 5], "uv": [60, 3]}
+					{"origin": [-6.9, 0, -1], "size": [6, 14, 7], "uv": [60, 7]}
 				]
 			},
 			{
 				"name": "leftLeg",
 				"parent": "root",
-				"pivot": [1.9, 12, 0],
+				"pivot": [3.9, 12, 2],
 				"cubes": [
-					{"origin": [0.9, 0, -1], "size": [5, 12, 5], "uv": [60, 3]}
+					{"origin": [0.9, 0, -1], "size": [6, 14, 7], "uv": [60, 7]}
 				]
 			}
 		]

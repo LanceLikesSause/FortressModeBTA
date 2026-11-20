@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MobLich extends MobMonster{
-	public int summonTimer = 0;
 	public int summonWait = 200;
+	public int summonTimer = summonWait;
 
 	public MobLich(World world){
 		super(world);

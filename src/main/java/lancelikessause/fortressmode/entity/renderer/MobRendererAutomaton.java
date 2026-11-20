@@ -17,7 +17,7 @@ import org.useless.dragonfly.models.entity.StaticEntityModel;
 public class MobRendererAutomaton extends MobRendererBiped<MobAutomaton> {
 	public MobRendererAutomaton() {
 		super(0.5F);
-		this.setModel("main", "geometry.zombie", 0.3);
+		this.setModel("main", "geometry.zombie", 0.0);
 	}
 
 	protected @Nullable StaticEntityModel getActiveModel(@NotNull MobAutomaton entity) {

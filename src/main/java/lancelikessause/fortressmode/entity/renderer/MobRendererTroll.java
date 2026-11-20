@@ -4,9 +4,10 @@ import lancelikessause.fortressmode.entity.MobTroll;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.MobRendererBiped;
-import net.minecraft.client.render.renderer.GLRenderer;
+import net.minecraft.core.util.helper.MathHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.useless.dragonfly.models.entity.BoneTransform;
 import org.useless.dragonfly.models.entity.StaticEntityModel;
 
 @Environment(EnvType.CLIENT)
@@ -17,15 +18,24 @@ public class MobRendererTroll extends MobRendererBiped<MobTroll> {
 		this.setModel("main", "geometry.troll", 0.0);
 	}
 
-	@Override
-	protected @Nullable StaticEntityModel getActiveModel(@NotNull MobTroll mobTroll) {
-		return this.getModel("main");
-	}
+	protected @Nullable StaticEntityModel getActiveModel(@NotNull MobTroll entity) {return this.getModel("main");}
 
-	protected void preRenderTransform(@NotNull MobTroll entity, double x, double y, double z, float yaw, float partialTick) {
-		super.preRenderTransform(entity, x, y, z, yaw, partialTick);
+	protected @Nullable StaticEntityModel setupAnimations(@NotNull MobTroll entity, @Nullable StaticEntityModel model, float partialTick, int layer) {
+		if (model == null) {
+			return null;
+		}
 
-		float scale = 1.5f;
-		GLRenderer.modelM4f().scale(scale, scale, scale);
+		StaticEntityModel model1 = super.setupAnimations(entity, model, partialTick, layer);
+		BoneTransform rightArm = model.getTransform("rightArm");
+		BoneTransform leftArm = model.getTransform("leftArm");
+		float swingProgress = Math.max(entity.getSwing(partialTick), entity.getSwingProgress(partialTick));
+		float var7 = MathHelper.sin(swingProgress * (float) Math.PI);
+		float var8 = MathHelper.sin((1.0F - (1.0F - swingProgress) * (1.0F - swingProgress)) * (float) Math.PI);
+		float swing = var7 * 1.8F - var8 * 0.4F;
+		rightArm.rotX -= swing;
+		leftArm.rotX -= swing;
+		rightArm.rotZ += var7 * 0.15F;
+		leftArm.rotZ -= var7 * 0.15F;
+		return model1;
 	}
 }

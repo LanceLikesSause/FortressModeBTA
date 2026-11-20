@@ -16,3 +16,26 @@ Spiders: will shoot spiderwebs at the player or target.
 
 Slimes: baby slimes will now deal damage.
 
+## New Mobs
+
+Automaton: fights for the player
+
+Ghost: will break torches
+
+The Lich: spawns zombies
+
+Meaty: heals monsters
+
+Troll: breaks blocks
+
+Harpy:
+
+Siren: pulls in
+
+mob that has to be killed twice
+
+
+
+
+
+

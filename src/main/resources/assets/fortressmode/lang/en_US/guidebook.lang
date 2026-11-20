@@ -3,3 +3,12 @@ fortressmode.troll.name=Troll
 fortressmode.ghost.name=Ghost
 fortressmode.meaty.name=Meaty
 fortressmode.lich.name=Lich
+
+item.fortressmode.wood_shield.name=Wooden Shield
+item.fortressmode.stone_shield.name=Stone Shield
+item.fortressmode.iron_shield.name=Iron Shield
+item.fortressmode.gold_shield.name=Gold Shield
+item.fortressmode.diamond_shield.name=Diamond Shield
+item.fortressmode.steel_shield.name=Steel Shield
+item.fortressmode.hammer.name=Hammer
+

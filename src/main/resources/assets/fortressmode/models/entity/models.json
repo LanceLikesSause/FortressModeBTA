@@ -1,5 +1,7 @@
 {
   "model_paths": [
+    "/assets/fortressmode/models/entity/goblin/goblin.geo.json",
+    "/assets/fortressmode/models/entity/meaty/meaty_downed.geo.json",
     "/assets/fortressmode/models/entity/lich/lich.geo.json",
     "/assets/fortressmode/models/entity/meaty/meaty.geo.json",
     "/assets/fortressmode/models/entity/troll/troll.geo.json",
@@ -8,6 +10,9 @@
     "/assets/minecraft/models/entity/zombie/zombie.geo.json"
   ],
   "renderers": {
+    "fortressmode:goblin": {
+      "main": "geometry.goblin"
+    },
     "fortressmode:automoton": {
       "main": "geometry.zombie"
     },
@@ -18,7 +23,8 @@
       "main": "geometry.ghost"
     },
     "fortressmode:meaty": {
-      "main": "geometry.meaty"
+      "main": "geometry.meaty",
+      "downed": "geometry.meaty_downed"
     },
     "fortressmode:lich": {
       "main": "geometry.lich"

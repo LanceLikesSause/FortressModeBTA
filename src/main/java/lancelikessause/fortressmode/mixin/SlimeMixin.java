@@ -1,11 +1,12 @@
 package lancelikessause.fortressmode.mixin;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import lancelikessause.fortressmode.ModConfig;
 import net.minecraft.core.entity.Entity;
 import net.minecraft.core.entity.monster.MobSlime;
 import net.minecraft.core.entity.player.Player;
 import net.minecraft.core.util.helper.DamageType;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,11 +15,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MobSlime.class)
 public abstract class SlimeMixin {
-	@Unique
-	public int jumpDelay = 1;
+
+	@ModifyReturnValue(method = "getMaxHealth", at = @At(value = "RETURN"))
+	public int getMaxHealth(int original) {
+		return original + ModConfig.slimeMaxHealth;
+	}
 
     @ModifyConstant(method = "<init>", constant = @Constant(intValue = 20))
-    private int decreaseJumpDelay(int original) {return jumpDelay;}
+    private int decreaseJumpDelay(int original) {return ModConfig.slimeJumpDelay;}
 
 	@Inject(method = "playerTouch", at = @At("HEAD"))
 	public void babySlimesHurt(Player player, CallbackInfo ci) {

@@ -1,0 +1,33 @@
+{
+  "mob.troll.moan": {
+    "sounds": [
+      "mob/troll/moan.ogg"
+    ]
+  },
+  "mob.troll.hurt": {
+    "sounds": [
+      "mob/troll/hurt.ogg"
+    ]
+  },
+  "mob.troll.death": {
+    "sounds": [
+      "mob/troll/death.ogg"
+    ]
+  },
+  "mob.meaty.moan": {
+    "sounds": [
+      "mob/meaty/moan.ogg"
+    ]
+  },
+  "mob.meaty.hurt": {
+    "sounds": [
+      "mob/meaty/hurt.ogg"
+    ]
+  },
+  "mob.meaty.death": {
+    "sounds": [
+      "mob/meaty/death.ogg"
+    ]
+  }
+}
+
